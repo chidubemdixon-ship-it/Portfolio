@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ejiekpe Dickson — UI/UX Designer &amp; Front-End Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12131A;
+    --paper:#F7F5F1;
+    --blueprint:#2F5EFF;
+    --amber:#FF9F1C;
+    --slate:#6B7280;
+    --line: rgba(18,19,26,0.14);
+    --line-soft: rgba(18,19,26,0.08);
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background:var(--blueprint); color:#fff; }
+  a{ color:inherit; }
+  img{ max-width:100%; display:block; }
+
+  .mono{ font-family:'JetBrains Mono', monospace; }
+  .display{ font-family:'Space Grotesk', sans-serif; }
+
+  :focus-visible{ outline:2px solid var(--blueprint); outline-offset:3px; }
+
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 32px; }
+  @media (max-width:640px){ .wrap{ padding:0 20px; } }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(247,245,241,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 0;
+  }
+  .nav-name{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600; font-size:17px; letter-spacing:-0.2px;
+    text-decoration:none;
+    display:flex; align-items:center; gap:8px;
+  }
+  .nav-name .dot{ width:8px; height:8px; border-radius:50%; background:var(--amber); display:inline-block; }
+  .nav-links{ display:flex; gap:32px; align-items:center; }
+  .nav-links a{
+    text-decoration:none; font-size:14px; color:var(--ink); opacity:0.75;
+    transition:opacity 0.15s;
+  }
+  .nav-links a:hover{ opacity:1; }
+  .nav-cta{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px; padding:9px 16px; border:1px solid var(--ink);
+    border-radius:100px; text-decoration:none !important; opacity:1 !important;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-cta:hover{ background:var(--ink); color:var(--paper); }
+  .nav-toggle{ display:none; }
+  @media (max-width:760px){
+    .nav-links{ display:none; }
+    .nav-toggle{ display:block; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:88px 0 96px;
+    position:relative;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  @media (max-width:900px){
+    .hero-grid{ grid-template-columns:1fr; gap:48px; }
+  }
+
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px; color:var(--blueprint);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:''; width:24px; height:1px; background:var(--blueprint);
+  }
+
+  .hero h1{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:clamp(34px, 5vw, 58px);
+    line-height:1.04;
+    letter-spacing:-1.5px;
+    margin:0 0 24px;
+  }
+  .hero h1 .accent{ color:var(--blueprint); }
+  .hero p.lede{
+    font-size:17px; line-height:1.65; color:var(--slate);
+    max-width:480px; margin:0 0 34px;
+  }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 22px; border-radius:100px;
+    text-decoration:none; font-size:14.5px; font-weight:500;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-primary{ background:var(--ink); color:var(--paper); }
+  .btn-primary:hover{ box-shadow:0 10px 24px rgba(18,19,26,0.25); }
+  .btn-ghost{ border:1px solid var(--line); color:var(--ink); }
+  .btn-ghost:hover{ border-color:var(--ink); }
+
+  /* hero visual: blueprint/terminal panel */
+  .hero-panel{
+    position:relative;
+    background:var(--ink);
+    border-radius:16px;
+    padding:26px 24px 24px;
+    color:#E7E7EC;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    line-height:1.9;
+    box-shadow:0 30px 60px rgba(18,19,26,0.25);
+  }
+  .hero-panel::before{
+    content:'';
+    position:absolute; top:-14px; left:-14px; right:14px; bottom:14px;
+    border:1px dashed rgba(47,94,255,0.5);
+    border-radius:16px;
+    pointer-events:none;
+  }
+  .dots{ display:flex; gap:6px; margin-bottom:18px; }
+  .dots span{ width:9px; height:9px; border-radius:50%; background:rgba(255,255,255,0.15); }
+  .term-line{ white-space:pre; }
+  .term-line .k{ color:#7DA9FF; }
+  .term-line .s{ color:#FFC97D; }
+  .term-line .c{ color:#7BD88F; }
+  .caret{ display:inline-block; width:7px; height:14px; background:var(--amber); vertical-align:-2px; animation:blink 1.1s step-end infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+  .corner-tag{
+    position:absolute; font-family:'JetBrains Mono', monospace; font-size:11px;
+    color:var(--slate); letter-spacing:0.3px;
+  }
+  .corner-tag.br{ bottom:-28px; right:0; }
+
+  /* ---------- SECTION HEADERS ---------- */
+  .section{ padding:88px 0; border-top:1px solid var(--line-soft); }
+  .section-head{ margin-bottom:48px; max-width:560px; }
+  .section-eyebrow{
+    font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--blueprint);
+    margin-bottom:14px; display:block;
+  }
+  .section-head h2{
+    font-family:'Space Grotesk', sans-serif; font-weight:600;
+    font-size:clamp(26px,3.4vw,36px); letter-spacing:-0.8px; margin:0 0 12px;
+  }
+  .section-head p{ color:var(--slate); font-size:15.5px; line-height:1.6; margin:0; }
+
+  /* ---------- WORK ---------- */
+  .work-list{ display:flex; flex-direction:column; gap:28px; }
+  .project-card{
+    display:grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap:0;
+    border:1px solid var(--line);
+    border-radius:18px;
+    overflow:hidden;
+    background:#fff;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .project-card:hover{ box-shadow:0 20px 48px rgba(18,19,26,0.10); transform:translateY(-3px); }
+  @media (max-width:820px){ .project-card{ grid-template-columns:1fr; } }
+
+  .project-visual{
+    position:relative;
+    background: linear-gradient(160deg, #EDEBFF 0%, #F7F5F1 60%);
+    padding:32px;
+    display:flex; align-items:center; justify-content:center;
+    min-height:260px;
+    border-right:1px solid var(--line);
+  }
+  @media (max-width:820px){ .project-visual{ border-right:none; border-bottom:1px solid var(--line); } }
+  .dim-corner{
+    position:absolute; width:16px; height:16px;
+    border-color:var(--blueprint); opacity:0.55;
+  }
+  .dim-corner.tl{ top:14px; left:14px; border-top:2px solid; border-left:2px solid; }
+  .dim-corner.br{ bottom:14px; right:14px; border-bottom:2px solid; border-right:2px solid; }
+  .dim-label{
+    position:absolute; top:14px; right:16px;
+    font-family:'JetBrains Mono', monospace; font-size:10.5px; color:var(--slate);
+  }
+
+  /* mock: shopping app */
+  .mock-phone{
+    width:180px; height:230px; background:#fff; border-radius:14px;
+    box-shadow:0 18px 40px rgba(18,19,26,0.14);
+    padding:14px 12px; position:relative;
+  }
+  .mock-phone .row{ display:flex; gap:8px; margin-bottom:10px; }
+  .mock-phone .chip{ height:8px; border-radius:4px; background:#EEEDF3; }
+  .mock-phone .chip.w1{ width:60%; }
+  .mock-phone .chip.w2{ width:40%; }
+  .mock-phone .banner{ height:54px; border-radius:8px; background:linear-gradient(135deg,#FFD79A,#FF9F1C); margin-bottom:10px; }
+  .mock-phone .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .mock-phone .tile{ height:56px; border-radius:8px; background:#F1F0F6; }
+  .mock-phone .tile.blue{ background:#DCE4FF; }
+
+  /* mock: flyer */
+  .mock-flyer{
+    width:150px; height:210px; background:#12131A; border-radius:10px;
+    box-shadow:0 18px 40px rgba(18,19,26,0.18);
+    padding:16px 14px; position:relative; color:#fff;
+  }
+  .mock-flyer .badge{ font-family:'JetBrains Mono',monospace; font-size:9px; color:#FF9F1C; margin-bottom:14px; }
+  .mock-flyer .headline{ font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; line-height:1.25; margin-bottom:14px; }
+  .mock-flyer .fl-line{ height:5px; background:rgba(255,255,255,0.18); border-radius:3px; margin-bottom:6px; }
+  .mock-flyer .fl-line.w1{ width:85%; } .mock-flyer .fl-line.w2{ width:65%; } .mock-flyer .fl-line.w3{ width:75%; }
+  .mock-flyer .fl-cta{ position:absolute; bottom:16px; left:14px; right:14px; height:26px; border-radius:20px; background:#FF9F1C; }
+
+  .project-info{ padding:36px 40px; display:flex; flex-direction:column; }
+  .project-tag{ font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--blueprint); margin-bottom:10px; }
+  .project-info h3{
+    font-family:'Space Grotesk', sans-serif; font-size:22px; font-weight:600;
+    letter-spacing:-0.3px; margin:0 0 12px;
+  }
+  .project-info p{ color:var(--slate); font-size:14.5px; line-height:1.65; margin:0 0 20px; }
+  .project-meta{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+  .meta-pill{
+    font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--ink);
+    background:#F1F0F6; border-radius:6px; padding:5px 9px;
+  }
+  .project-link{
+    margin-top:auto; display:inline-flex; align-items:center; gap:8px;
+    font-size:14px; font-weight:500; text-decoration:none; color:var(--ink);
+    padding-top:14px; border-top:1px solid var(--line-soft);
+  }
+  .project-link svg{ transition:transform 0.15s; }
+  .project-link:hover svg{ transform:translate(3px,-3px); }
+
+  /* ---------- SKILLS ---------- */
+  .skills-rail{ display:flex; flex-wrap:wrap; gap:12px; }
+  .skill-chip{
+    font-family:'JetBrains Mono', monospace; font-size:13px;
+    border:1px solid var(--line); border-radius:100px;
+    padding:10px 18px; display:flex; align-items:center; gap:8px;
+    background:#fff;
+  }
+  .skill-chip .lvl{ width:6px; height:6px; border-radius:50%; background:var(--blueprint); }
+  .skill-groups{ display:grid; grid-template-columns:repeat(3,1fr); gap:32px; margin-top:36px; }
+  @media (max-width:760px){ .skill-groups{ grid-template-columns:1fr; } }
+  .skill-group-title{
+    font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--slate);
+    text-transform:uppercase; letter-spacing:0.6px; margin-bottom:14px;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start; }
+  @media (max-width:900px){ .about-grid{ grid-template-columns:1fr; } }
+  .about-copy p{ font-size:16px; line-height:1.75; color:var(--ink); margin:0 0 18px; }
+  .about-copy p:last-child{ margin-bottom:0; }
+  .timeline{ border-left:2px solid var(--line); padding-left:24px; display:flex; flex-direction:column; gap:26px; }
+  .t-item{ position:relative; }
+  .t-item::before{
+    content:''; position:absolute; left:-29.5px; top:4px;
+    width:9px; height:9px; border-radius:50%; background:var(--blueprint);
+    box-shadow:0 0 0 4px var(--paper);
+  }
+  .t-date{ font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--blueprint); margin-bottom:4px; }
+  .t-role{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:16px; margin-bottom:4px; }
+  .t-org{ font-size:13.5px; color:var(--slate); }
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  footer{ background:var(--ink); color:var(--paper); padding:80px 0 40px; }
+  .footer-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:56px; }
+  .footer-head h2{
+    font-family:'Space Grotesk', sans-serif; font-weight:600;
+    font-size:clamp(30px,4.5vw,50px); letter-spacing:-1.2px; margin:0; max-width:560px;
+  }
+  .footer-head .accent{ color:var(--amber); }
+  .footer-contact{ display:flex; flex-direction:column; gap:10px; }
+  .footer-email{
+    font-family:'Space Grotesk', sans-serif; font-size:20px; text-decoration:none;
+    border-bottom:1px solid rgba(247,245,241,0.35); padding-bottom:4px; width:fit-content;
+  }
+  .footer-sub{ font-size:13.5px; color:rgba(247,245,241,0.6); font-family:'JetBrains Mono', monospace; }
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;
+    padding-top:28px; border-top:1px solid rgba(247,245,241,0.14);
+    font-size:13px; color:rgba(247,245,241,0.55);
+  }
+  .footer-links{ display:flex; gap:22px; }
+  .footer-links a{ text-decoration:none; color:rgba(247,245,241,0.75); }
+  .footer-links a:hover{ color:#fff; }
+
+  /* reveal on scroll */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .reveal{ transition:none; opacity:1; transform:none; }
+    .caret{ animation:none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="nav-name"><span class="dot"></span>Ejiekpe Dickson</a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta mono" href="Ejiekpe-Dixon.pdf" target="_blank">Résumé ↗</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">UI/UX DESIGNER · LAGOS, NIGERIA</div>
+        <h1>Designs the pixel. <br>Ships the <span class="accent">code.</span></h1>
+        <p class="lede">I'm Ejiekpe Dickson — I build interfaces twice: once in Figma, once in the browser. From wireframe to working front end, without the handoff getting lost in translation.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View selected work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-panel">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="term-line"><span class="k">const</span> designer = {</div>
+          <div class="term-line">&nbsp;&nbsp;tool: <span class="s">'Figma'</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;focus: <span class="s">'user flows, prototypes'</span></div>
+          <div class="term-line">};</div>
+          <div class="term-line" style="margin-top:10px"><span class="k">const</span> developer = {</div>
+          <div class="term-line">&nbsp;&nbsp;stack: [<span class="s">'HTML'</span>, <span class="s">'CSS'</span>, <span class="s">'Bootstrap'</span>],</div>
+          <div class="term-line">&nbsp;&nbsp;builds: <span class="s">'responsive, semantic UI'</span></div>
+          <div class="term-line">};</div>
+          <div class="term-line" style="margin-top:10px"><span class="c">// one person, both roles</span><span class="caret"></span></div>
+        </div>
+        <div class="corner-tag br mono">status: available for work</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">SELECTED WORK</span>
+        <h2>Case studies</h2>
+        <p>Two projects from my design practice — each built in Figma, from user flow to high-fidelity prototype.</p>
+      </div>
+
+      <div class="work-list">
+
+        <article class="project-card reveal">
+          <div class="project-visual">
+            <span class="dim-corner tl"></span>
+            <span class="dim-corner br"></span>
+            <span class="dim-label">375×812</span>
+            <div class="mock-phone">
+              <div class="row"><div class="chip w1"></div><div class="chip w2"></div></div>
+              <div class="banner"></div>
+              <div class="grid2">
+                <div class="tile blue"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile blue"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">01 · MOBILE APP</span>
+            <h3>E-Commerce Shopping UI</h3>
+            <p>A full shopping-app concept in the style of Amazon — browse, product detail, cart, and checkout flows designed as a cohesive, high-fidelity prototype with real interactive navigation between screens.</p>
+            <div class="project-meta">
+              <span class="meta-pill">Figma</span>
+              <span class="meta-pill">Prototyping</span>
+              <span class="meta-pill">Mobile UI</span>
+              <span class="meta-pill">User Flows</span>
+            </div>
+            <a class="project-link" href="https://www.figma.com/proto/twJjg0E0fJsLL2UksdY4fW/Amazon-App-%E2%80%93-E-Commerce-Shopping-UI-Design--Community-?node-id=4-3&p=f&t=TzZGaZgRQj4ELSGm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A3&show-proto-sidebar=1" target="_blank" rel="noopener">
+              View live prototype
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual">
+            <span class="dim-corner tl"></span>
+            <span class="dim-corner br"></span>
+            <span class="dim-label">A5 · PRINT</span>
+            <div class="mock-flyer">
+              <div class="badge">DIGITAL WORLD</div>
+              <div class="headline">Grow your brand online.</div>
+              <div class="fl-line w1"></div>
+              <div class="fl-line w2"></div>
+              <div class="fl-line w3"></div>
+              <div class="fl-cta"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag mono">02 · BRAND / MARKETING</span>
+            <h3>Digital World — Agency Flyer</h3>
+            <p>Marketing collateral for a digital agency offering social media management, paid ads, and web design services. Designed as a print-ready A5 flyer with clear hierarchy and a direct call to action.</p>
+            <div class="project-meta">
+              <span class="meta-pill">Figma</span>
+              <span class="meta-pill">Print Design</span>
+              <span class="meta-pill">Branding</span>
+              <span class="meta-pill">Layout</span>
+            </div>
+            <a class="project-link" href="https://www.figma.com/design/knZTorh74vgfqlepMfeIb7/Digital-World?t=3y9PdUUTFz3yiaUQ-1" target="_blank" rel="noopener">
+              View in Figma
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">CAPABILITIES</span>
+        <h2>Skills &amp; tools</h2>
+        <p>The overlap between design and front-end is where I work best.</p>
+      </div>
+
+      <div class="skill-groups reveal">
+        <div>
+          <div class="skill-group-title">Design</div>
+          <div class="skills-rail">
+            <span class="skill-chip"><span class="lvl"></span>Figma</span>
+            <span class="skill-chip"><span class="lvl"></span>Wireframing</span>
+            <span class="skill-chip"><span class="lvl"></span>Prototyping</span>
+            <span class="skill-chip"><span class="lvl"></span>Design Systems</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">Build</div>
+          <div class="skills-rail">
+            <span class="skill-chip"><span class="lvl"></span>HTML</span>
+            <span class="skill-chip"><span class="lvl"></span>CSS</span>
+            <span class="skill-chip"><span class="lvl"></span>Bootstrap</span>
+            <span class="skill-chip"><span class="lvl"></span>Responsive Layout</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-title">Practice</div>
+          <div class="skills-rail">
+            <span class="skill-chip"><span class="lvl"></span>User Research</span>
+            <span class="skill-chip"><span class="lvl"></span>Case Studies</span>
+            <span class="skill-chip"><span class="lvl"></span>Communication</span>
+            <span class="skill-chip"><span class="lvl"></span>Organization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <span class="section-eyebrow">ABOUT</span>
+        <h2 style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:clamp(26px,3.4vw,36px); letter-spacing:-0.8px; margin:0 0 20px;">The short version</h2>
+        <div class="about-copy">
+          <p>I started in IT operations and helpdesk work — the kind of job where you learn exactly what frustrates people about software, because they call you about it every day. That's what pulled me toward design.</p>
+          <p>Since late 2024 I've trained intensively as a UI/UX designer with GoMyCode in Lagos, moving from low-fidelity sketches to polished, interactive Figma prototypes, then bridging those designs into real HTML and CSS so they hold up outside the design file.</p>
+          <p>I like projects where I own both ends: the user flow and the shipped layout.</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-date">MAR 2025 — PRESENT</div>
+            <div class="t-role">Certifications: UI, UX, Figma, HTML, CSS, Bootstrap</div>
+            <div class="t-org">GoMyCode</div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">NOV 2024 — MAR 2025</div>
+            <div class="t-role">UI/UX Designer Certificate</div>
+            <div class="t-org">GoMyCode Learn Academy, Yaba</div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">NOV 2024 — JUL 2026</div>
+            <div class="t-role">UX/UI Designer</div>
+            <div class="t-org">GoMyCode, Lagos — prototypes, wireframes, design systems, front-end integration</div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">SEP 2023 — APR 2026</div>
+            <div class="t-role">Computer Science (WASSCE)</div>
+            <div class="t-org">Mountain Top Secondary School, Lagos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-head">
+      <h2>Let's build something <span class="accent">worth shipping.</span></h2>
+      <div class="footer-contact">
+        <a class="footer-email" href="mailto:chidubemdickson123@gmail.com">chidubemdickson123@gmail.com</a>
+        <span class="footer-sub">+234 805 332 2926 · Lagos, Nigeria</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ejiekpe Dickson. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="Ejiekpe-Dickson-Resume.pdf" target="_blank">Résumé</a>
+        <a href="mailto:chidubemdickson123@gmail.com">Email</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
