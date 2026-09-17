@@ -1,63 +1,78 @@
-Ejiekpe Dickson
-Resume
-Lagos 101212
-chidubemdickson123@gmail.com
-+2348053322926
-I am a Versatile and results-driven Software Developer & UI/UX Designer with a proven ability to bridge
-the gap between creative design and technical implementation. Expert at managing the entire product
-lifecycle—from conducting user research and building high-fidelity Figma prototypes to engineering
-clean, semantic, and highly responsive web layouts. Experienced in accelerating front-end performance,
-building unified component systems, and deploying scalable web applications that optimize user
-experiences and drive business growth.
-Personal Details
-Currently Employed: Yes
-Highest Level of Education: Senior Secondary
-Industry: IT Operations & Helpdesk
-NYSC Status: Not Applicable
-Work Experience
-UX/UI Designer
-GoMyCode-Lagos
-November 2024 to July 2026
-1. Design and Development Foundation (Nov 2024 – Mar 2025):
-2. Undertook intensive hands-on training as a UI/UX Designer, mastering foundational design principles,
-layout strategies, and user-centric workflows.
-3. Built interactive prototypes and wireframes from scratch, establishing a solid baseline for creating
-intuitive digital products.
-4. Advanced Tool Mastery & Figma Ecosystem:
-5. Leveraged Figma to design scalable interface layouts, manage comprehensive design components,
-and build detailed user flows.
-6. Transitioned low-fidelity concept sketches into polished, high-fidelity mockups ready for front-end
-implementation.
-7. Front-End Integration:
-8. Bridged the gap between UX design and development by applying practical knowledge of HTML and
-CSS to structure layouts and troubleshoot vertical stacking and styling issues for interface components.
-9. Collaborated with code-ready workflows to ensure designs remained technically viable, highly
-responsive, and clean for developers.
-10. Portfolio Development & Execution.
-11. Actively applied design systems, wireframing, and interactive prototyping to build real-world digital
-solutions.
-12. Compiled and documented complex design case studies into a live personal portfolio showcase to
-demonstrate practical, industry-standard design capabilities.
-Education
-Computer science (WASSCE)
-Mountain Top Secondary School-Lagos Nigeria
-September 2023 to April 2026
-UI/UX designer (Certificate)
-GoMyCode learn Academy-Yaba
-November 2024 to March 2025
-1. Certificate of completion from GoMyCode learn Academy
-2. Project designs on Figma
-3. Currently enrolled in Full Stack and Software Development
-Skills
-• Maintenance
-• Communication skills
-• Organizational skills
-Certifications and Licenses
-GoMyCode
-March 2025 to Present
-1. User Interface
-2. User Experience
-3. Figma
-4. HTML
-5. CSS
-6. BOOTSTRAP
+# Ejiekpe Dickson Chidubem
+
+### Full-Stack Software Developer
+
+Lagos State, Nigeria  |  +234 805 332 6926  |  [Chidubemdickson123@gmail.com](mailto:Chidubemdickson123@gmail.com)  |  [portfolio-dickson5.vercel.app](https://portfolio-dickson5.vercel.app)
+
+---
+
+## Profile
+
+Full-stack software developer seeking an internship to contribute to and grow within a product engineering team. Builds complete web applications end to end — responsive React/Next.js frontends backed by Node.js, Express, and MongoDB APIs — informed by 2–3 years of UI/UX design experience that shapes clean, user-centred interfaces before a single line of code is written. Comfortable across the full workflow: wireframing and prototyping in Figma, implementing production-ready interfaces, building REST APIs and authentication, and managing deployment through Git, Vercel, and Netlify.
+
+---
+
+## Technical Skills
+
+**Frontend**
+HTML, CSS, JavaScript, React, Next.js, Vite, responsive & mobile-first design
+
+**Backend**
+Node.js, Express.js, MongoDB & Mongoose, RESTful API design, JWT authentication, CORS configuration
+
+**Design** *(2–3 years' experience)*
+Figma (low- to high-fidelity wireframing & prototyping), UI/UX principles, user flows, usability principles, visual hierarchy, typography, colour systems, design systems
+
+**Tools & Practices**
+Git & GitHub (branching, merge conflict resolution, collaborative workflows), deployment (Vercel, Netlify), environment configuration, component-based development, cross-functional collaboration
+
+---
+
+## Project Experience
+
+### Task Management App — Full-Stack Web Application
+
+*Personal Project — React (Vite), Node.js, Express, MongoDB | September 2026*
+
+- Built a full-stack task management application with a Vite/React frontend and an Express/MongoDB backend
+- Implemented JWT-based authentication with protected routes and role-based access (admin vs. standard user)
+- Designed the REST API layer — auth routes, user model, and controllers — connected to a MongoDB Atlas database
+- Configured and deployed the application to Vercel and Netlify, resolving cross-platform build and environment configuration issues
+- Managed the full Git/GitHub workflow, including branching and resolving merge conflicts, while maintaining a clean commit history
+
+### Enterprise Ops Dashboard — Design & Development
+
+*Independent Project — Figma, React / Next.js | August 2026*
+
+An end-to-end design-to-development project: a monitoring dashboard that lets managers track employee progress across an organization, taken from initial UX research through to a working frontend.
+
+- Designed the onboarding experience in Figma, building low- and mid-fidelity wireframes to map user flow and reduce friction points before writing any code
+- Designed and implemented UI components in React and Next.js, from wireframe through to a functioning interface
+- Structured the onboarding flow and core dashboard views for clarity and ease of use, applying responsive, mobile-first layout principles throughout
+
+### Threadly — Fashion Resale Shopping UI
+
+*UI/UX Design Project — Figma | September 2026*
+
+- Designed a mobile shopping app UI for a fashion resale marketplace, covering browse, category filtering, and product detail flows
+- Built interactive click-through prototypes in Figma to validate navigation and user flow
+- Designed empty-state and edge-case screens — including out-of-stock states with a restock-notification flow — to cover the full range of real user scenarios, not just the primary path
+
+---
+
+## Education
+
+**Mountain Top Secondary School**
+High School Diploma (S.S.C.E) — 2026
+
+---
+
+## Certifications
+
+- **UX & UI Design** — Certificate of Completion, GoMyCode (March 2025)
+
+---
+
+## Languages
+
+- English — Proficient
