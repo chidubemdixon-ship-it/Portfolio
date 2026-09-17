@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejiekpe Dickson Chidubem | Resume</title>
+    <style>
+      :root {
+        --ink: #111827;
+        --muted: #4b5563;
+        --line: #dfe3ea;
+        --accent: #1d4ed8;
+        --soft: #f3f6fb;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: #ffffff;
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.55;
+      }
+
+      .page {
+        max-width: 900px;
+        margin: 32px auto;
+        padding: 36px 48px 28px;
+        background: white;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+      }
+
+      h2 {
+        margin: 18px 0 10px;
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+      }
+
+      h3 {
+        margin: 0 0 6px;
+        font-size: 18px;
+      }
+
+      p, li {
+        font-size: 15px;
+        color: var(--ink);
+      }
+
+      .header {
+        border-bottom: 2px solid var(--line);
+        padding-bottom: 14px;
+        margin-bottom: 18px;
+      }
+
+      .title {
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: var(--muted);
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .meta {
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      .meta a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .section {
+        margin-top: 18px;
+      }
+
+      .profile {
+        margin: 8px 0 0;
+        font-size: 15px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 24px;
+        margin-top: 10px;
+      }
+
+      .skills-grid strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .project {
+        margin-top: 10px;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .project-title {
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .project-meta {
+        font-size: 13px;
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .edu-line {
+        margin-top: 8px;
+      }
+
+      .edu-line strong {
+        font-size: 16px;
+      }
+
+      .certs {
+        margin-top: 8px;
+      }
+
+      @media print {
+        body { background: white; }
+        .page {
+          max-width: none;
+          margin: 0;
+          padding: 28px 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="title"><h1>Ejiekpe Dickson Chidubem</h1></div>
+        <div class="subtitle">Full-Stack Software Developer</div>
+        <div class="meta">
+          Lagos State, Nigeria | +234 805 332 6926 | <a href="mailto:Chidubemdickson123@gmail.com">Chidubemdickson123@gmail.com</a> | <a href="https://portfolio-dickson5.vercel.app" target="_blank">portfolio-dickson5.vercel.app</a>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>Profile</h2>
+        <p class="profile">
+          Full-stack software developer seeking an internship to contribute to and grow within a product engineering team. Builds complete web applications end to end — responsive React/Next.js frontends backed by Node.js, Express, and MongoDB APIs — informed by 2–3 years of UI/UX design experience that shapes clean, user-centred interfaces before a single line of code is written. Comfortable across the full workflow: wireframing and prototyping in Figma, implementing production-ready interfaces, building REST APIs and authentication, and managing deployment through Git, Vercel, and Netlify.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <strong>Frontend</strong>
+            HTML, CSS, JavaScript, React, Next.js, Vite, responsive & mobile-first design
+          </div>
+          <div>
+            <strong>Backend</strong>
+            Node.js, Express.js, MongoDB &amp; Mongoose, RESTful API design, JWT authentication, CORS configuration
+          </div>
+          <div>
+            <strong>Design</strong>
+            Figma (low- to high-fidelity wireframing &amp; prototyping), UI/UX principles, user flows, usability principles, visual hierarchy, typography, colour systems, design systems
+          </div>
+          <div>
+            <strong>Tools &amp; Practices</strong>
+            Git &amp; GitHub (branching, merge conflict resolution, collaborative workflows), deployment (Vercel, Netlify), environment configuration, component-based development, cross-functional collaboration
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Project Experience</h2>
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-title">Task Management App — Full-Stack Web Application</div>
+            <div class="project-meta">Personal Project — React (Vite), Node.js, Express, MongoDB | September 2026</div>
+          </div>
+          <ul>
+            <li>Built a full-stack task management application with a Vite/React frontend and an Express/MongoDB backend</li>
+            <li>Implemented JWT-based authentication with protected routes and role-based access (admin vs. standard user)</li>
+            <li>Designed the REST API layer — auth routes, user model, and controllers — connected to a MongoDB Atlas database</li>
+            <li>Configured and deployed the application to Vercel and Netlify, resolving cross-platform build and environment configuration issues</li>
+            <li>Managed the full Git/GitHub workflow, including branching and resolving merge conflicts, while maintaining a clean commit history</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-title">Enterprise Ops Dashboard — Design &amp; Development</div>
+            <div class="project-meta">Independent Project — Figma, React / Next.js | August 2026</div>
+          </div>
+          <p style="margin: 8px 0 0;">An end-to-end design-to-development project: a monitoring dashboard that lets managers track employee progress across an organization, taken from initial UX research through to a working frontend.</p>
+          <ul>
+            <li>Designed the onboarding experience in Figma, building low- and mid-fidelity wireframes to map user flow and reduce friction points before writing any code</li>
+            <li>Designed and implemented UI components in React and Next.js, from wireframe through to a functioning interface</li>
+            <li>Structured the onboarding flow and core dashboard views for clarity and ease of use, applying responsive, mobile-first layout principles throughout</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-title">Threadly — Fashion Resale Shopping UI</div>
+            <div class="project-meta">UI/UX Design Project — Figma | September 2026</div>
+          </div>
+          <ul>
+            <li>Designed a mobile shopping app UI for a fashion resale marketplace, covering browse, category filtering, and product detail flows</li>
+            <li>Built interactive click-through prototypes in Figma to validate navigation and user flow</li>
+            <li>Designed empty-state and edge-case screens — including out-of-stock states with a restock-notification flow — to cover the full range of real user scenarios, not just the primary path</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="edu-line"><strong>Mountain Top Secondary School</strong><br />High School Diploma (S.S.C.E) — 2026</div>
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+        <div class="certs">• <strong>UX &amp; UI Design</strong> — Certificate of Completion, GoMyCode (March 2025)</div>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+        <div>• English — Proficient</div>
+      </section>
+    </div>
+  </body>
+</html>
