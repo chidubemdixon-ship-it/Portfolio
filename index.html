@@ -13,6 +13,10 @@
     --paper:#F7F5F1;
     --blueprint:#2F5EFF;
     --amber:#FF9F1C;
+    --accent:#2F5EFF;
+    --pink:#D84C83;
+    --teal:#008F87;
+    --violet:#7856C5;
     --slate:#6B7280;
     --line: rgba(18,19,26,0.14);
     --line-soft: rgba(18,19,26,0.08);
@@ -254,6 +258,40 @@
   .project-link svg{ transition:transform 0.15s; }
   .project-link:hover svg{ transform:translate(3px,-3px); }
 
+  .case{
+    display:grid; grid-template-columns:0.72fr 1.28fr; gap:32px;
+    padding:28px; border:1px solid var(--line); border-radius:12px;
+    background:#fff;
+  }
+  .case-visual{
+    min-height:200px; border-radius:8px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .glyph{
+    color:#fff; font-family:'Space Grotesk',sans-serif;
+    font-size:48px; font-weight:700;
+  }
+  .case-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+  .tag{
+    border-radius:4px; padding:5px 8px;
+    font-family:'JetBrains Mono',monospace; font-size:10.5px;
+  }
+  .c-violet{ color:#6443AD; background:#F0EBFA; }
+  .c-amber{ color:#9A5B00; background:#FFF0D8; }
+  .c-teal{ color:#006E68; background:#E1F4F1; }
+  .case h3{
+    font-family:'Space Grotesk',sans-serif; font-size:22px; line-height:1.3;
+    font-weight:600; margin:0 0 8px;
+  }
+  .case .meta{ color:var(--slate); font-size:13px; line-height:1.5; margin-bottom:14px; }
+  .case p{ color:var(--slate); font-size:14px; line-height:1.65; margin:0 0 16px; }
+  .process{ padding:16px; background:var(--paper); border-radius:6px; }
+  .process ol{ display:grid; gap:12px; margin:0; padding:0; list-style:none; }
+  .process li{ display:grid; grid-template-columns:74px 1fr; gap:12px; font-size:13px; line-height:1.55; }
+  .process .step{ color:var(--ink); font-weight:600; }
+  @media (max-width:820px){ .case{ grid-template-columns:1fr; gap:20px; } }
+  @media (max-width:480px){ .case{ padding:18px; } .process li{ grid-template-columns:1fr; gap:2px; } }
+
   /* ---------- SKILLS ---------- */
   .skills-rail{ display:flex; flex-wrap:wrap; gap:12px; }
   .skill-chip{
@@ -374,108 +412,78 @@
       <div class="section-head reveal">
         <span class="section-eyebrow">SELECTED WORK</span>
         <h2>Case studies</h2>
-        <p>Four projects from my design practice — each built in Figma, from user flow to high-fidelity prototype.</p>
+        <p>Three case studies and a business flyer from my design practice.</p>
       </div>
 
       <div class="work-list">
 
-        <article class="project-card reveal">
-          <div class="project-visual">
-            <span class="dim-corner tl"></span>
-            <span class="dim-corner br"></span>
-            <span class="dim-label">375×812</span>
-            <div class="mock-phone">
-              <div class="row"><div class="chip w1"></div><div class="chip w2"></div></div>
-              <div class="banner"></div>
-              <div class="grid2">
-                <div class="tile blue"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile blue"></div>
-              </div>
+        <div class="case reveal">
+          <div class="case-visual" style="background: linear-gradient(135deg, var(--accent), var(--pink));"><span class="glyph">Eo</span></div>
+          <div>
+            <div class="case-tags"><span class="tag c-violet">Elevare Human Solutions</span><span class="tag c-violet">Hiring Dashboard</span><span class="tag c-violet">Figma + Frontend</span></div>
+            <h3>Hiring Operations Dashboard for Elevare Human Solutions</h3>
+            <div class="meta">UI/UX Designer &amp; Frontend Developer · Figma, HTML/CSS, JavaScript</div>
+            <p>Elevare Human Solutions needed a clearer way to track candidates moving through their hiring pipeline. I designed and built a dashboard that brings every stage of the hiring process — sourcing, interviews, offers — into one scannable view.</p>
+            <div class="process">
+              <ol>
+                <li><span class="step">Discover</span><span>Looked at how their hiring team tracked candidates and where visibility broke down across stages.</span></li>
+                <li><span class="step">Define</span><span>Prioritized a clear view of where every candidate sits in the pipeline, so nothing falls through the cracks.</span></li>
+                <li><span class="step">Design</span><span>Designed the full interface in Figma — candidate pipeline view, stage indicators and a consistent visual system for status and progress.</span></li>
+                <li><span class="step">Deliver</span><span>Built the frontend from the Figma design, translating the component system into working HTML, CSS and JavaScript.</span></li>
+              </ol>
+            </div>
+            <p style="font-size:0.88rem;">Add specifics here — how many hiring stages it covers, or feedback from Elevare's team.</p>
+            <div style="display:flex; gap:12px; margin-top:16px;">
+              <a href="https://enterprise-ops-dashboard-eight.vercel.app/" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--accent); text-decoration:none;">Live demo →</a>
+              <a href="https://github.com/chidubemdixon-ship-it/Enterprise-Ops-Dashboard.git" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--accent); text-decoration:none;">View code →</a>
             </div>
           </div>
-          <div class="project-info">
-            <span class="project-tag mono">01 · MOBILE APP</span>
-            <h3>E-Commerce Shopping UI</h3>
-            <p>A full shopping-app concept in the style of Amazon — browse, product detail, cart, and checkout flows designed as a cohesive, high-fidelity prototype with real interactive navigation between screens.</p>
-            <div class="project-meta">
-              <span class="meta-pill">Figma</span>
-              <span class="meta-pill">Prototyping</span>
-              <span class="meta-pill">Mobile UI</span>
-              <span class="meta-pill">User Flows</span>
-            <a class="project-link" href="https://www.figma.com/proto/twJjg0E0fJsLL2UksdY4fW/Amazon-App-%E2%80%93-E-Commerce-Shopping-UI-Design--Community-?node-id=4-3&p=f&t=TzZGaZgRQj4ELSGm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A3&show-proto-sidebar=1" target="_blank" rel="noopener">
-              View live prototype
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
+        </div>
 
-        <article class="project-card reveal">
-          <div class="project-visual">
-            <span class="dim-corner tl"></span>
-            <span class="dim-corner br"></span>
-            <span class="dim-label">375×812</span>
-            <div class="mock-phone">
-              <div class="row"><div class="chip w1"></div><div class="chip w2"></div></div>
-              <div class="banner"></div>
-              <div class="grid2">
-                <div class="tile blue"></div>
-                <div class="tile"></div>
-                <div class="tile"></div>
-                <div class="tile blue"></div>
-              </div>
+        <div class="case reveal">
+          <div class="case-visual" style="background: linear-gradient(135deg, var(--amber), var(--teal));"><span class="glyph">Pp</span></div>
+          <div>
+            <div class="case-tags"><span class="tag c-amber">GoMyCode Capstone</span><span class="tag c-amber">Web App</span><span class="tag c-amber">Task Management</span></div>
+            <h3>PriorityPulse — Task Management Web App</h3>
+            <div class="meta">UI/UX Designer &amp; Developer · Final Capstone Project, GoMyCode Software Development Bootcamp · Figma, HTML/CSS, JavaScript/TypeScript</div>
+            <p>Most people juggle to-dos across notes apps, reminders and their memory. As my final capstone project for the GoMyCode Software Development Bootcamp, I designed and built PriorityPulse, a task-management app to help anyone organize their day-to-day work in one place — deployed and live.</p>
+            <div class="process">
+              <ol>
+                <li><span class="step">Discover</span><span>Looked at common friction points in everyday task apps — cluttered lists, no clear sense of priority.</span></li>
+                <li><span class="step">Define</span><span>Focused the product around one idea: make it obvious what to do next, not just what's on the list.</span></li>
+                <li><span class="step">Design</span><span>Designed the task list, priority states and add/edit flows in Figma, keeping the interface minimal and fast to scan.</span></li>
+                <li><span class="step">Deliver</span><span>Built and shipped the full app — frontend deployed on Vercel, backend/API deployed on Render.</span></li>
+              </ol>
+            </div>
+            <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
+              <a href="https://task-manager-frontend-dickson5.vercel.app/" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--amber); text-decoration:none;">Live demo →</a>
+              <a href="https://prioritypulse-4ewd.onrender.com" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--amber); text-decoration:none;">API / backend →</a>
+              <a href="https://github.com/chidubemdixon-ship-it/Labphase.git" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--amber); text-decoration:none;">View code →</a>
             </div>
           </div>
-          <div class="project-info">
-            <span class="project-tag mono">02 · MOBILE APP</span>
-            <h3>FinFlow — Mobile Banking App UI</h3>
-            <p>A modern mobile banking concept — account overview, transfers, transaction history, and card management designed as a cohesive, high-fidelity prototype with real interactive navigation between screens.</p>
-            <div class="project-meta">
-              <span class="meta-pill">Figma</span>
-              <span class="meta-pill">Prototyping</span>
-              <span class="meta-pill">Mobile UI</span>
-              <span class="meta-pill">User Flows</span>
-            </div>
-            <a class="project-link" href="https://www.figma.com/proto/Xz7dhCIPa7hQMRagpHbmeu/FinFlow-%E2%80%94-Mobile-Banking-App-UI?t=gE8OJDt67TYimboI-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-2" target="_blank" rel="noopener">
-              View live prototype
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
+        </div>
 
-        <article class="project-card reveal">
-          <div class="project-visual">
-            <span class="dim-corner tl"></span>
-            <span class="dim-corner br"></span>
-            <span class="dim-label">375×812</span>
-            <div class="mock-phone">
-              <div class="row"><div class="chip w1"></div><div class="chip w2"></div></div>
-              <div class="banner"></div>
-              <div class="grid2">
-                <div class="tile"></div>
-                <div class="tile blue"></div>
-                <div class="tile blue"></div>
-                <div class="tile"></div>
-              </div>
+        <div class="case reveal">
+          <div class="case-visual" style="background: linear-gradient(135deg, var(--teal), var(--accent));"><span class="glyph">Rs</span></div>
+          <div>
+            <div class="case-tags"><span class="tag c-teal">Hospitality</span><span class="tag c-teal">Bootstrap</span><span class="tag c-teal">Course Project</span></div>
+            <h3>The Reserve — Restaurant &amp; Reservations Site</h3>
+            <div class="meta">UI/UX Designer &amp; Frontend Developer · Bootstrap CSS Course Project · HTML, CSS, Bootstrap 5</div>
+            <p>The Reserve is a restaurant and reservations site I designed and built as a Bootstrap CSS course project, aimed at giving an upscale dining brand a site that feels as considered as the food.</p>
+            <div class="process">
+              <ol>
+                <li><span class="step">Discover</span><span>Looked at how upscale restaurant sites use typography and imagery to signal quality before a visitor reads a word of copy.</span></li>
+                <li><span class="step">Define</span><span>Aimed for a warm, editorial feel — a serif and sans pairing that reads elegant rather than corporate.</span></li>
+                <li><span class="step">Design</span><span>Paired EB Garamond with Be Vietnam Pro, and laid out the navigation, hero and menu sections using Bootstrap's grid and components.</span></li>
+                <li><span class="step">Deliver</span><span>Built the full responsive site in HTML, CSS and Bootstrap 5.3.3, then deployed it live.</span></li>
+              </ol>
+            </div>
+            <div style="display:flex; gap:12px; margin-top:16px;">
+              <a href="https://the-reserve-st-git-main-dickson5.vercel.app/" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--teal); text-decoration:none;">Live demo →</a>
+              <a href="https://github.com/chidubemdixon-ship-it/the-reserve-st.git" target="_blank" rel="noopener" style="font-size:0.88rem; font-weight:600; color:var(--teal); text-decoration:none;">View code →</a>
             </div>
           </div>
-          <div class="project-info">
-            <span class="project-tag mono">03 · MOBILE APP</span>
-            <h3>Threadly — Fashion Resale Shopping UI</h3>
-            <p>A peer-to-peer fashion resale app concept — listing browse, item detail, seller profiles, and checkout designed as a cohesive, high-fidelity prototype with real interactive navigation between screens.</p>
-            <div class="project-meta">
-              <span class="meta-pill">Figma</span>
-              <span class="meta-pill">Prototyping</span>
-              <span class="meta-pill">Mobile UI</span>
-              <span class="meta-pill">User Flows</span>
-            </div>
-            <a class="project-link" href="https://www.figma.com/proto/ut2lO1hCT1522Ffp3O3Z5t/Threadly-%E2%80%94-Fashion-Resale-Shopping-UI?node-id=1-2&p=f&t=a5HvKSXQgtXNwdID-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2">
-              View live prototype
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-        </article>
+        </div>
 
         <article class="project-card reveal">
           <div class="project-visual">
