@@ -8,7 +8,7 @@ Lagos State, Nigeria  |  +234 805 332 2926  |  [Chidubemdickson123@gmail.com](ma
 
 ## Profile
 
-Full-stack software developer seeking an internship to contribute to and grow within a product engineering team. Builds complete web applications end to end — responsive React/Next.js frontends backed by Node.js, Express, and MongoDB APIs — informed by 2–3 years of UI/UX design experience that shapes clean, user-centred interfaces before a single line of code is written. Comfortable across the full workflow: wireframing and prototyping in Figma, implementing production-ready interfaces, building REST APIs and authentication, and managing deployment through Git, Vercel, and Netlify. Earlier IT operations and helpdesk work built a practical understanding of the software issues users encounter.
+Full-stack software developer seeking an internship to contribute to and grow within a product engineering team. Builds complete web applications end to end — responsive React/Next.js frontends backed by Node.js, Express, and MongoDB APIs — informed by 2–3 years of UI/UX design experience that shapes clean, user-centred interfaces before a single line of code is written. Comfortable across the full workflow: wireframing and prototyping in Figma, implementing production-ready interfaces, building REST APIs and authentication, and managing deployment through Git, Vercel, and Netlify.
 
 ---
 
@@ -44,8 +44,6 @@ Git & GitHub (branching, merge conflict resolution, collaborative workflows), de
 
 *Client Project — Figma, React / Next.js | August 2026*
 
-An end-to-end design-to-development project: a monitoring dashboard that lets managers track employee progress across an organization, taken from initial UX research through to a working frontend.
-
 - Designed the onboarding experience in Figma, building low- and mid-fidelity wireframes to map user flow and reduce friction points before writing any code
 - Designed and implemented UI components in React and Next.js, from wireframe through to a functioning interface
 - Structured the onboarding flow and core dashboard views for clarity and ease of use, applying responsive, mobile-first layout principles throughout
@@ -63,7 +61,6 @@ An end-to-end design-to-development project: a monitoring dashboard that lets ma
 ## Education
 
 **Mountain Top Secondary School**
-September 2023 – July 2026
 West African Senior School Certificate Examination (WASSCE) — 2026
 
 ---
