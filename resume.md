@@ -2,13 +2,13 @@
 
 ### Full-Stack Software Developer
 
-Lagos State, Nigeria  |  +234 805 332 6926  |  [Chidubemdickson123@gmail.com](mailto:Chidubemdickson123@gmail.com)  |  [portfolio-dickson5.vercel.app](https://portfolio-dickson5.vercel.app)
+Lagos State, Nigeria  |  +234 805 332 2926  |  [Chidubemdickson123@gmail.com](mailto:Chidubemdickson123@gmail.com)  |  [portfolio-dickson5.vercel.app](https://portfolio-dickson5.vercel.app)
 
 ---
 
 ## Profile
 
-Full-stack software developer seeking an internship to contribute to and grow within a product engineering team. Builds complete web applications end to end — responsive React/Next.js frontends backed by Node.js, Express, and MongoDB APIs — informed by 2–3 years of UI/UX design experience that shapes clean, user-centred interfaces before a single line of code is written. Comfortable across the full workflow: wireframing and prototyping in Figma, implementing production-ready interfaces, building REST APIs and authentication, and managing deployment through Git, Vercel, and Netlify.
+Full-stack software developer seeking an internship to contribute to and grow within a product engineering team. Builds complete web applications end to end — responsive React/Next.js frontends backed by Node.js, Express, and MongoDB APIs — informed by 2–3 years of UI/UX design experience that shapes clean, user-centred interfaces before a single line of code is written. Comfortable across the full workflow: wireframing and prototyping in Figma, implementing production-ready interfaces, building REST APIs and authentication, and managing deployment through Git, Vercel, and Netlify. Earlier IT operations and helpdesk work built a practical understanding of the software issues users encounter.
 
 ---
 
@@ -20,7 +20,7 @@ HTML, CSS, JavaScript, React, Next.js, Vite, responsive & mobile-first design
 **Backend**
 Node.js, Express.js, MongoDB & Mongoose, RESTful API design, JWT authentication, CORS configuration
 
-**Design** *(2–3 years' experience)*
+**Design (2–3 years' experience)**
 Figma (low- to high-fidelity wireframing & prototyping), UI/UX principles, user flows, usability principles, visual hierarchy, typography, colour systems, design systems
 
 **Tools & Practices**
@@ -63,7 +63,8 @@ An end-to-end design-to-development project: a monitoring dashboard that lets ma
 ## Education
 
 **Mountain Top Secondary School**
-High School Diploma (S.S.C.E) — 2026
+September 2023 – July 2026
+West African Senior School Certificate Examination (WASSCE) — 2026
 
 ---
 
