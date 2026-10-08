@@ -30,9 +30,9 @@ Git & GitHub (branching, merge conflict resolution, collaborative workflows), de
 
 ## Project Experience
 
-### Task Management App — Full-Stack Web Application
+### PriorityPulse — Task Management App (Full-Stack)
 
-*Personal Project — React (Vite), Node.js, Express, MongoDB | September 2026*
+*GoMyCode Capstone Project — React (Vite), Node.js, Express, MongoDB | September 2026*
 
 - Built a full-stack task management application with a Vite/React frontend and an Express/MongoDB backend
 - Implemented JWT-based authentication with protected routes and role-based access (admin vs. standard user)
@@ -40,9 +40,9 @@ Git & GitHub (branching, merge conflict resolution, collaborative workflows), de
 - Configured and deployed the application to Vercel and Netlify, resolving cross-platform build and environment configuration issues
 - Managed the full Git/GitHub workflow, including branching and resolving merge conflicts, while maintaining a clean commit history
 
-### Enterprise Ops Dashboard — Design & Development
+### Hiring Operations Dashboard — Elevare Human Solutions
 
-*Independent Project — Figma, React / Next.js | August 2026*
+*Client Project — Figma, React / Next.js | August 2026*
 
 An end-to-end design-to-development project: a monitoring dashboard that lets managers track employee progress across an organization, taken from initial UX research through to a working frontend.
 
@@ -71,6 +71,7 @@ West African Senior School Certificate Examination (WASSCE) — 2026
 ## Certifications
 
 - **UX & UI Design** — Certificate of Completion, GoMyCode (March 2025)
+- **Software Development** — Certificate of Completion, GoMyCode (2026)
 
 ---
 
