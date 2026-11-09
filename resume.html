@@ -82,6 +82,28 @@
         text-decoration: none;
       }
 
+      .resume-actions {
+        margin-top: 16px;
+      }
+
+      .download-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 13px;
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .download-link:hover {
+        background: #1e40af;
+      }
+
       .section {
         margin-top: 18px;
       }
@@ -149,6 +171,7 @@
 
       @media print {
         body { background: white; }
+        .resume-actions { display: none; }
         .page {
           max-width: none;
           margin: 0;
@@ -164,6 +187,9 @@
         <div class="subtitle">Full-Stack Software Engineer | AI-Native Product Developer</div>
         <div class="meta">
           Lagos, Nigeria | +234 805 332 2926 | <a href="mailto:Chidubemdickson123@gmail.com">Chidubemdickson123@gmail.com</a> | <a href="mailto:chidubemdixon@gmail.com">chidubemdixon@gmail.com</a> | <a href="https://portfolio-dickson5.vercel.app" target="_blank" rel="noopener">portfolio-dickson5.vercel.app</a> | <a href="https://github.com/chidubemdixon-ship-it" target="_blank" rel="noopener">github.com/chidubemdixon-ship-it</a>
+        </div>
+        <div class="resume-actions">
+          <a class="download-link" href="resume.pdf" download="Ejiekpe-Dickson-Chidubem-Resume.pdf">Download PDF</a>
         </div>
       </header>
 
