@@ -1,64 +1,83 @@
 # Ejiekpe Dickson Chidubem
 
-**Full-Stack Software Engineer | AI-Native Product Developer**
+**Full-Stack Software Developer | UI/UX Designer**
 
-Lagos, Nigeria | +234 805 332 2926 | [Chidubemdickson123@gmail.com](mailto:Chidubemdickson123@gmail.com) | [chidubemdixon@gmail.com](mailto:chidubemdixon@gmail.com) | [portfolio-dickson5.vercel.app](https://portfolio-dickson5.vercel.app) | [github.com/chidubemdixon-ship-it](https://github.com/chidubemdixon-ship-it)
+Lagos State, Nigeria | +234 805 332 2926 | [chidubemdixon@gmail.com](mailto:chidubemdixon@gmail.com) | [portfolio-dickson5.vercel.app](https://portfolio-dickson5.vercel.app) | [github.com/chidubemdixon-ship-it](https://github.com/chidubemdixon-ship-it)
 
-## Executive Profile
+## PROFILE
 
-High-velocity Full-Stack Software Engineer specializing in architecting scalable web applications, resilient RESTful APIs, and intuitive user interfaces. Leverages modern AI agent workflows and automated scaffolding to accelerate development lifecycles from initial concept to production deployment. Combines a strong foundation in the MERN stack (MongoDB, Express.js, React, Next.js, Node.js) with over two years of product design expertise to engineer seamless, user-centric digital solutions at startup speed.
+Full-stack software developer actively seeking a full-time role on a product engineering team. Builds complete web applications end to end with React, Next.js, Node.js, Express, and MongoDB, supported by nearly two years of UI/UX design experience that shapes clean, user-focused interfaces. Hands-on experience through developer internships at BuildLab Africa and CodeAlpha, including REST API design, authentication, database modelling, and production deployment on Vercel and Netlify.
 
-## Technical Competencies
+## TECHNICAL SKILLS
 
-- **Frontend Architecture:** React, Next.js, Vite, JavaScript (ES6+), HTML5, CSS3, Responsive & Mobile-First Engineering
-- **Backend & Databases:** Node.js, Express.js, MongoDB, Mongoose, RESTful API Design, JWT Authentication, Role-Based Access Control (RBAC), CORS Configuration
-- **AI & Workflow Acceleration:** AI Agent Orchestration, LLM API Integration, Prompt Engineering, AI-Assisted Code Generation & Automated Debugging
-- **Product & UI/UX Engineering:** Figma (Wireframing & Interactive Prototyping), Design Systems, User Flow Optimization, Visual Hierarchy, Usability Engineering
-- **DevOps & Version Control:** Git, GitHub (Branching Strategies, Merge Conflict Resolution), CI/CD Deployment (Vercel, Netlify), Environment Management
+- Frontend: HTML, CSS, JavaScript (ES6+), React, Next.js, Vite, Responsive & Mobile-First Design
+- Backend: Node.js, Express.js, MongoDB & Mongoose, RESTful API Design, JWT Authentication, Role-Based Access Control, CORS
+- Design: Figma (Wireframing & Prototyping), Design Systems, User Flows, Visual Hierarchy, Usability Principles
+- Tools & Practices: Git & GitHub (Branching, Pull Requests, Code Reviews), Vercel, Netlify, Agile Workflows, AI-Assisted Development
 
-## Experience & Engineering Projects
+## EXPERIENCE
 
-### Software Engineering Intern
+### Full Stack Engineer Intern — BuildLab Africa
 
-*Full-Stack Development | Present*
+*Remote, Lagos, Nigeria | October 2026 – Present*
 
-*BuildLab Africa*
+- Build and maintain backend REST APIs and database integrations using Node.js, Express, and MongoDB
+- Design Entity-Relationship Diagrams (ERDs) to model and manage application data flow
+- Collaborate with team members through GitHub pull requests, code reviews, and agile workflows to ship features
 
-- Architect and deploy production-ready frontend interfaces and scalable backend services within a fast-paced, agile engineering environment.
-- Accelerate feature delivery timelines by integrating AI-native development workflows, reducing boilerplate setup and debugging overhead.
-- Collaborate across cross-functional teams to translate complex business logic into clean, maintainable, and responsive codebases.
+### Frontend Developer Intern — CodeAlpha
 
-### PriorityPulse — Full-Stack Task Management Platform
+*Remote | October 2026 – November 2026*
 
-*Lead Full-Stack Engineer | React (Vite), Node.js, Express, MongoDB | September 2026*
+- Translated Figma designs and mockups into responsive, reusable React components
+- Integrated frontend interfaces with REST APIs to deliver fully functional web applications
+- Built a personal frontend portfolio using React and Next.js, deployed on Vercel
+- Collaborated with mentors to review code, meet deadlines, and ship tasks
 
-- Architected an end-to-end task management application featuring a high-performance React/Vite client paired with a Node.js and Express backend.
-- Engineered secure user authentication and authorization pipelines utilizing JSON Web Tokens (JWT), protected routing, and granular Role-Based Access Control (Admin vs. Standard User).
-- Designed and implemented normalized data schemas, user models, and modular RESTful API controllers backed by MongoDB Atlas.
-- Orchestrated production deployments across Vercel and Netlify, resolving cross-origin resource sharing (CORS) policies and environment variable configurations.
+### User Interface Designer — GOMYCODE
+
+*November 2024 – July 2026*
+
+- Created high-fidelity Figma mockups, complex interface layouts, and component-based design systems
+- Applied HTML and CSS to build responsive interfaces and resolve layout issues
+- Applied design systems to real-world portfolio projects and documented them as design case studies
+
+## PROJECTS
+
+### Task Management App (PriorityPulse) — Full-Stack Web Application
+
+*GoMyCode Bootcamp Final Project | React (Vite), Node.js, Express, MongoDB | September 2026*
+
+- Built a full-stack task management app with a React (Vite) frontend and an Express/MongoDB backend
+- Implemented JWT authentication with protected routes and role-based access (admin and standard user)
+- Designed the REST API layer (auth routes, user model, controllers) connected to MongoDB Atlas
+- Deployed to Vercel and Netlify, resolving cross-platform build and environment configuration issues
 
 ### Hiring Operations Dashboard — Elevare Human Solutions
 
-*Frontend & Product Engineer | Next.js, React, Figma | August 2026*
+*Client Project | Figma, React, Next.js | August 2026*
 
-- Spearheaded the end-to-end engineering of an enterprise onboarding dashboard, translating low- and mid-fidelity wireframes into a responsive, production-grade Next.js application.
-- Optimized user onboarding workflows to minimize friction points, delivering an intuitive, mobile-first interface tailored for high-volume operational efficiency.
-- Engineered modular, reusable React component libraries to ensure visual consistency and maintainability across core dashboard views.
+- Designed the onboarding experience in Figma, using low- and mid-fidelity wireframes to map user flow and reduce friction
+- Built UI components in React and Next.js, taking the design from wireframe to a working, responsive interface
+- Structured onboarding and core dashboard views for clarity and ease of use, with mobile-first layouts
 
-### Threadly — Fashion Resale Marketplace UI
+### Threadly — Fashion Resale Shopping UI
 
-*Product Designer | Figma | September 2026*
+*UI/UX Design Project | Figma | September 2026*
 
-- Designed a comprehensive mobile e-commerce interface encompassing product discovery, dynamic category filtering, and streamlined checkout user flows.
-- Constructed high-fidelity, interactive prototypes to validate navigation architecture and user journey intuitiveness prior to engineering handoff.
-- Accounted for complex edge-case scenarios—including empty states and automated out-of-stock restock notification flows—to ensure a resilient user experience.
+- Designed a mobile shopping app covering browse, category filtering, and product detail flows
+- Built interactive click-through prototypes to validate navigation and user flow
+- Designed empty-state and edge-case screens, including an out-of-stock state with a restock-notification flow
 
-## Education & Certifications
+## EDUCATION
 
-- **Software Development Certification** — GoMyCode (2026)
-- **UX & UI Design Certification** — GoMyCode (March 2025)
-- **West African Senior School Certificate Examination (WASSCE)** — Mountain Top Secondary School (2026)
+Mountain Top Secondary School — High School Diploma (S.S.C.E), 2026
 
-## Languages
+## CERTIFICATIONS
 
-- **English** — Native / Bilingual Proficiency
+- Software Development Certification — GoMyCode (2026)
+- UX & UI Design Certification — GoMyCode (March 2025)
+
+## LANGUAGES
+
+English — Fluent
